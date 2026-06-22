@@ -178,40 +178,82 @@ body {
 }
 
 /* FORMULARIO */
-
-.formulario {
-    background-color: var(--rojo);
+.formulario{
+    background-color: #FAF8F0;
 }
 
-.formulario-contenido {
-    max-width: 450px;
+.formularioC{
     text-align: center;
+     
 }
 
-.formulario h2 {
-    color: white;
+.formularioC h2{
+    color: var(--rojo);
     font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.descripcion-formulario{
+    color: var(--negro);
+    font-size: 18px;
     margin-bottom: 25px;
 }
 
-.formulario input::placeholder,
-.formulario textarea::placeholder {
-    font-weight: 400;
+.bloque-domicilio-info{
+
+    min-height: 520px;
+    background-image:
+        linear-gradient(
+            rgba(62,54,63,.35),
+            rgba(62,54,63,.35)
+        ),
+        url("../img/banner.jpg");
+    background-size: cover;
+    background-position: 65% center;
+    color: white;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.btn-solicitar {
-    background-color: white;
-    color: var(--rojo);
-    border-radius: 30px;
-    padding: 8px 35px;
+
+.bloque-domicilio-info h2{
+
+     font-size: 42px;
     font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,.20);
 }
 
-.btn-solicitar:hover {
-    transform: scale(1.05);
-    background-color: var(--blanco);
-    color: var(--rojo);
+
+.bloque-domicilio-info p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
+
+.btn-solicitar{
+    background-color: var(--rojo);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 40px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.btn-solicitar:hover{
+    background-color: #b92f2d;
+    color: white;
+}
+
+
+
+
+
+
 
 /* TEXTO FINAL */
 
@@ -250,13 +292,14 @@ body {
 
 footer {
     background-image: url("../img/Footer.png");
-    background-size: cover;
-    background-position: center;
-    padding: 120px 0 40px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 80px 0 30px;
 }
 
 footer h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -270,7 +313,11 @@ footer i {
 
 /* RESPONSIVE */
 
+/* RESPONSIVE */
+/* 
+En tu CSS actual sí necesitas responsive para tus estilos personalizados: logo, marca, banner, botón login y footer. Bootstrap no ajusta esos tamaños tuyos automáticamente. */
 @media screen and (max-width: 768px) {
+
     .logo {
         width: 70px;
     }
@@ -295,10 +342,6 @@ footer i {
     .btn-login-nav {
         width: 100%;
         margin-top: 8px;
-    }
-
-    .opcion-menu {
-        text-align: center;
     }
 
     footer {

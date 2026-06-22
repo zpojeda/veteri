@@ -171,66 +171,74 @@
         </section>
 
         <!-- FORMULARIO -->
-        <section class="formulario py-5">
-            <div class="container">
-                <form class="mx-auto formulario-contenido">
+     <section class="formulario py-5">
+    <div class="container">
+        <div class="row align-items-center shadow-lg rounded-4 overflow-hidden bg-white">
+
+            <div class="col-md-6 bloque-domicilio-info">
+                <h2>Domicilios para tu mascota</h2>
+
+                <p>
+                    Recibe alimentos, accesorios y productos esenciales sin salir de casa.
+                    En Maskot llevamos el bienestar de tu mascota hasta tu puerta.
+                </p>
+
+               
+            </div>
+
+            <div class="col-md-6 p-5">
+
+                <form action="" class="formularioC">
+
                     <h2>Domicilios Maskot</h2>
 
-                    <input 
-                        type="text" 
-                        class="form-control mb-3" 
+                    <p class="descripcion-formulario">
+                        Solicita tu pedido y programa la entrega.
+                    </p>
+
+                    <input type="text"
+                        class="form-control mb-3"
                         placeholder="Escribe tu nombre"
                         minlength="3"
-                        maxlength="40"
-                        required
-                    >
+                        maxlength="30"
+                        required>
 
-                    <input 
-                        type="email" 
-                        class="form-control mb-3" 
+                    <input type="email"
+                        class="form-control mb-3"
                         placeholder="Escribe tu correo"
-                        required
-                    >
+                        required>
 
-                    <input 
-                        type="text" 
-                        class="form-control mb-3" 
-                        placeholder="Producto solicitado"
-                        minlength="3"
-                        maxlength="50"
-                        required
-                    >
-
-                    <input 
-                        type="number" 
-                        class="form-control mb-3" 
+                    <input type="number"
+                        class="form-control mb-3"
                         placeholder="Cantidad"
                         min="1"
                         max="20"
-                        required
-                    >
+                        required>
 
-                    <input 
-                        type="text" 
-                        class="form-control mb-3" 
+                    <input type="text"
+                        class="form-control mb-3"
                         placeholder="Dirección de entrega"
                         minlength="5"
                         maxlength="80"
-                        required
-                    >
+                        required>
 
-                    <textarea 
-                        class="form-control mb-3" 
-                        rows="4" 
-                        placeholder="Observaciones adicionales"
+                    <textarea
+                        class="form-control mb-4"
+                        rows="3"
                         maxlength="150"
-                    ></textarea>
+                        placeholder="Observaciones adicionales"></textarea>
 
-                    <button type="submit" class="btn btn-solicitar">Solicitar</button>
+                    <button type="submit" class="btn btn-solicitar">
+                        Solicitar domicilio
+                    </button>
+
                 </form>
-            </div>
-        </section>
 
+            </div>
+
+        </div>
+    </div>
+</section>
         <!-- TEXTO FINAL -->
         <section class="container py-5">
             <p class="text-final">
